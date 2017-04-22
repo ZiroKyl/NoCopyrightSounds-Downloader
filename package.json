@@ -1,0 +1,30 @@
+{
+  "name": "no-copyright-sounds-downloader",
+  "version": "1.00.0",
+  "description": "Little script that helps download and catalog your favorite NCS songs & auto add proper NCS text (for use in YouTube and Twitch) to ID3 comment tag.",
+  "keywords": [
+    "NoCopyrightSounds",
+    "NCS",
+	"YouTube",
+    "downloader",
+    "ID3",
+    "hive.co",
+    "toneden.io"
+  ],
+  "homepage": "https://github.com/ZiroKyl/NoCopyrightSounds-Downloader",
+  "bugs": "https://bugs.have.it/manual-tune",
+  "files": [
+    "NoCopyrightSounds.js",
+	"LICENSE_N0"
+  ],
+  "bin": "./NoCopyrightSounds.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZiroKyl/NoCopyrightSounds-Downloader.git"
+  },
+  "dependencies": {
+	  "he": "^1.1.1",
+	  "http2": "^3.3.6"
+  },
+  "license": "SEE LICENSE IN LICENSE_N0"
+}

@@ -1,17 +1,53 @@
+###############################################################################
+# https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes
+# https://git-scm.com/book/ru/ch7-2.html
+# https://git-scm.com/docs/gitignore#_pattern_format
+#
+
+
+###############################################################################
 # Auto detect text files and perform LF normalization
+###############################################################################
 * text=auto
 
-# Custom for Visual Studio
-*.cs     diff=csharp
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+###############################################################################
+# Set custom file attributes
+#
+# https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
+# https://gist.github.com/mcgwiz/9082394
+###############################################################################
+*.js diff="javascript"
+
+#Hint: LICENSE_N0 diff eol=lf
+
+
+###############################################################################
+# diff behavior for common document formats
+# 
+# Convert binary document formats to text before diffing them.
+# http://stackoverflow.com/a/28148416
+###############################################################################
+*.doc        diff=astextplain
+*.DOC        diff=astextplain
+*.docx       diff=astextplain
+*.DOCX       diff=astextplain
+*.dot        diff=astextplain
+*.DOT        diff=astextplain
+*.pdf        diff=astextplain
+*.PDF        diff=astextplain
+*.rtf        diff=astextplain
+*.RTF        diff=astextplain
+
+
+###############################################################################
+# Exclude files from "git archive" and "Download ZIP" (GitHub, ...)
+#
+# https://feeding.cloud.geek.nz/posts/excluding-files-from-git-archive/
+# https://habrahabr.ru/post/258891
+# https://www.reddit.com/r/PHP/comments/2jzp6k/i_dont_need_your_tests_in_my_production/
+###############################################################################
+.gitignore      export-ignore
+.gitattributes  export-ignore
+LICENSE_N0      export-ignore
+
