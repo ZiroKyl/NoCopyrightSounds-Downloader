@@ -4,6 +4,8 @@ Little script that helps
 * download and catalog some set of your favorite [NCS](https://www.youtube.com/user/NoCopyrightSounds) songs
 * auto add proper NCS [text](http://nocopyrightsounds.co.uk/user-license/) (for use in YouTube and Twitch) to ID3 comment tag
 
+![No Copyright Sounds logo](https://upload.wikimedia.org/wikipedia/commons/6/6e/No_Copyright_Sounds_logo.jpg "NCS logo from Wikimedia")
+
 ## Usage
 *nix:
 ```shell
